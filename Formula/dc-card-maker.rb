@@ -4,9 +4,9 @@ class DcCardMaker < Formula
   url "https://github.com/jstolarek/dc-card-maker-script.git", tag: "v1.2.1"
   license "GPL"
 
-  depends_on "ticky/dreamcast/cdirip"
   depends_on "cdrtools"
-  depends_on "img4dc"
+  depends_on "ticky/dreamcast/cdirip"
+  depends_on "ticky/dreamcast/img4dc"
 
   def install
     pkgshare.install "data"
