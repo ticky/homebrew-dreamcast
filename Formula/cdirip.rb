@@ -24,6 +24,6 @@ class Cdirip < Formula
   test do
     resource("test-image").stage testpath
     assert_match "Saving  Track:  1  Type: Mode2/2336  Size: 475     LBA: 0       [cut: 2] [ISO]",
-shell_output("#{bin}/cdirip 01/GDmenu_v0.6.cdi")
+                 shell_output("#{bin}/cdirip 01/GDmenu_v0.6.cdi")
   end
 end
