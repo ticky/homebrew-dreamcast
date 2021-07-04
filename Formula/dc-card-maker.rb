@@ -2,7 +2,7 @@ class DcCardMaker < Formula
   desc "Dreamcast GDMenu maker script"
   homepage "https://github.com/jstolarek/dc-card-maker-script"
   url "https://github.com/jstolarek/dc-card-maker-script.git", tag: "v1.2.1"
-  license "GPL"
+  license "GPL-2.0-or-later"
 
   depends_on "cdrtools"
   depends_on "ticky/dreamcast/cdirip"
