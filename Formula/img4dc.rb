@@ -5,6 +5,12 @@ class Img4dc < Formula
   version "0.0.0-20210316212253"
   license "GPL-3.0-only"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/img4dc-0.0.0-20210316212253"
+    sha256 cellar: :any_skip_relocation, catalina:     "926319ecac103fd7bb56b8c52070bda56cfeb5c3debe40eccba5afa2ee8b51fc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ac3cd934b66b7a6fdd1921a93c292999228b1630b26771320104cde6a1b14157"
+  end
+
   depends_on "cmake" => :build
 
   def install
