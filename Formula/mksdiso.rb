@@ -11,6 +11,11 @@ class Mksdiso < Formula
   depends_on "ticky/dreamcast/burncdi"
   depends_on "ticky/dreamcast/cdirip"
 
+  resource "test-image" do
+    url "https://dreamcast.wiki/wiki/images/1/12/GDmenu_v0.6%2824-08-2016%29.zip"
+    sha256 "d26c71104f90b58367da84a89d7378909c19a88890631c230b21604541fba811"
+  end
+
   def install
     pkgshare.install Dir["mksdiso/*"]
 
@@ -27,5 +32,11 @@ class Mksdiso < Formula
       bin.install "makeip/makeip"
       bin.install "scramble/scramble"
     end
+  end
+
+  test do
+    resource("test-image").stage testpath
+    assert_match "Success: SD-ISO saved as GDmenuv0.6.cdi_sd.iso",
+                 shell_output("#{bin}/mksdiso -h 01/GDmenu_v0.6.cdi")
   end
 end

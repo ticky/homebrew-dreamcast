@@ -13,4 +13,8 @@ class Burncdi < Formula
   def install
     bin.install "bin/burncdi"
   end
+
+  test do
+    assert_match "Unable to confirm device can be used", shell_output("echo $(#{bin}/burncdi)")
+  end
 end
