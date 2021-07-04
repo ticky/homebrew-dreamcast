@@ -35,6 +35,6 @@ class DcCardMaker < Formula
     touch "test.txt"
     system bin/"dc-card-maker", "test.txt", "input", "output"
     assert_predicate testpath/"output/GDEMU.ini", :exist?
-    assert_predicate testpath/"output/01", :exist?
+    assert_predicate testpath/"output/01/gdmenu.cdi", :exist?
   end
 end
