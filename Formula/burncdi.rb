@@ -7,6 +7,12 @@ class Burncdi < Formula
   license "BSD-2-Clause"
   head "https://github.com/ticky/mksdiso.git"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/burncdi-0.9.2-ticky.1"
+    sha256 cellar: :any_skip_relocation, catalina:     "68ebbc81f535dff06a17d7683630f6303d53ff1514ca6fd587411f55a075c6b4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ad8b42f229643c9b5146b675a46d5e3b34629c8ee17a08c3412c227678df3940"
+  end
+
   depends_on "cdrtools"
   depends_on "ticky/dreamcast/cdirip"
 
