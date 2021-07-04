@@ -24,6 +24,7 @@ class DcCardMaker < Formula
               "This script requires cdirip to be present in the system"
     inreplace "dc-card-maker.sh", "./tools/gditools.py", pkgshare/"tools/gditools.py"
     inreplace "dc-card-maker.sh", "data/", pkgshare/"data/"
+    inreplace "dc-card-maker.sh", "GDMENU_INI=ini/LIST.INI", "GDMENU_INI=\"$(mktemp -d -t ini)/LIST.INI\""
     inreplace "dc-card-maker.sh", "ini/", pkgshare/"ini/"
 
     bin.install "dc-card-maker.sh" => "dc-card-maker"
