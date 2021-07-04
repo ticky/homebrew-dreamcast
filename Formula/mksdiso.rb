@@ -7,6 +7,12 @@ class Mksdiso < Formula
   license "BSD-2-Clause"
   head "https://github.com/ticky/mksdiso.git"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/mksdiso-0.9.2-ticky.1"
+    sha256 cellar: :any_skip_relocation, catalina:     "42efe143606145bc4e26c4e15b223d5514cf022b64777febbdb95bfb9024992b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8b6d37ab36a1810023ad563ae1bf5c86009a3145123d574ab5f369051f6b93fa"
+  end
+
   depends_on "p7zip"
   depends_on "ticky/dreamcast/burncdi"
   depends_on "ticky/dreamcast/cdirip"
