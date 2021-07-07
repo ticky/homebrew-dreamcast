@@ -5,6 +5,12 @@ class DcScramble < Formula
   version "0.0.0"
   sha256 "20f32b06f15a2e2f8a9d92fad6ba72a99794978e4fe5d7d4a2c1e5608738ca47"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/dc-scramble-0.0.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "c7766c8631f27790ad999ee4ee713b46abd1c9b3b8f1c6694f5b5e47e5b45417"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "09570957b2d56f6baf7f8b2ebdb569e4a40a50e166653bd8e422da6e81690995"
+  end
+
   patch :DATA
 
   def install
