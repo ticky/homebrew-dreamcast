@@ -21,6 +21,7 @@ class Gdiviewer < Formula
 
   test do
     resource("test-image").stage testpath/"test"
-    assert_match "Hardware ID: SEGA ENTERPRISES Vendor ID: 4893 CD-ROM1/1 Media ID: JUE Media Info: 0199810 Region: MK6969 Peripheral: V0.6.0 Product Number: 20160812 Version Number: Release Date: Maker ID: GDMENU", shell_output("echo $(#{bin}/gdiinfo #{testpath}/test/track01.iso 2>/dev/null)")
+    assert_match "Product Number: 20160812 Version Number: Release Date: Maker ID: GDMENU",
+                 shell_output("echo $(#{bin}/gdiinfo #{testpath}/test/track01.iso 2>/dev/null)")
   end
 end
