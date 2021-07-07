@@ -5,7 +5,7 @@ cask "gdi-builder" do
   url "https://github.com/Sappharad/GDIbuilder/releases/download/v#{version}/gdibuilder#{version.delete(".")}_macOS.zip"
   name "GDMENUCardManager"
   desc "Utility to assist with (re)building Dreamcast .gdi images from scratch"
-  homepage "https://github.com/Sappharad/GDIbuilder"
+  homepage "https://projects.sappharad.com/tools/gdibuilder.html"
 
   app "GDIBuilder.app"
 
