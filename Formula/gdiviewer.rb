@@ -7,6 +7,12 @@ class Gdiviewer < Formula
   license "MIT"
   head "https://github.com/boyvanamstel/gdiviewer-cli.git"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/gdiviewer-0.0.0.20190117133233"
+    sha256 cellar: :any_skip_relocation, catalina:     "e14041612eed7645b7a9b42179f855207ae09b5fee87abdd1802a13de221d4d0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e62bb6ef3ff4db4da497a999294ef071ec84ef0bdf0fbc8ec1882226ac580a89"
+  end
+
   resource "test-image" do
     url "https://github.com/sonik-br/GDMENUCardManager/raw/master/src/GDMENUCardManager.Core/tools/menu_gdi/track01.iso"
     sha256 "3f538945a8e42cca30a0903008a5865d35d43b3a6a32bf0e0042880c3596a458"
