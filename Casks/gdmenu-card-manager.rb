@@ -7,6 +7,11 @@ cask "gdmenu-card-manager" do
   desc "Manage content on SD Card for Dreamcast's GDMenu"
   homepage "https://github.com/sonik-br/GDMENUCardManager"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "GDMENUCardManager.app"
 
   uninstall quit: [

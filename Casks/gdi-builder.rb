@@ -7,6 +7,11 @@ cask "gdi-builder" do
   desc "Utility to assist with (re)building Dreamcast .gdi images from scratch"
   homepage "https://projects.sappharad.com/tools/gdibuilder.html"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "GDIBuilder.app"
 
   uninstall quit: [

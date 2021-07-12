@@ -4,6 +4,11 @@ class DcCardMaker < Formula
   url "https://github.com/jstolarek/dc-card-maker-script.git", tag: "v1.2.1"
   license "GPL-2.0-or-later"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   bottle do
     root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/dc-card-maker-1.2.1"
     sha256 cellar: :any_skip_relocation, catalina:     "c3913548e6ed94a3ddc4a83559b2db8567260a4763f93794e7c8174ef8d867c7"
