@@ -7,6 +7,12 @@ class Gditools3 < Formula
   license "GPL-3.0-only"
   head "https://github.com/AltoRetrato/gditools3.git"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/gditools3-3.0.1"
+    sha256 cellar: :any_skip_relocation, catalina:     "d81a56cbd89c76b8cfe8c70b4ca65a644213f412423f93825df92c27f124cc46"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e10b262365b3cb0bb201b51af7f7133199fe98d6e78ea95e7a89b3e765613555"
+  end
+
   def install
     (pkgshare/"include").install "iso9660.py"
 
