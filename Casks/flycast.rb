@@ -7,6 +7,11 @@ cask "flycast" do
   desc "Multiplatform Sega Dreamcast, Naomi and Atomiswave emulator"
   homepage "https://github.com/flyinghead/flycast"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "Flycast.app"
 
   uninstall quit: [
