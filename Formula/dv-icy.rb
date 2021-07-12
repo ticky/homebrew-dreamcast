@@ -12,8 +12,9 @@ class DvIcy < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/dv-icy-0.9"
-    sha256 cellar: :any,                 catalina:     "1c1cd4f5a54474c47fb9074cd1204b2ef95a25212648169a38fcf683f0ac067c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9f7a2d44a28899ac48da894f0c4abff3b4e36b6ae8fe0a2e8a4dd6fa98b0fa92"
+    rebuild 1
+    sha256 cellar: :any,                 catalina:     "0465dc2e36606c992c4447fbbd79a8f10b7c0b083316d84edb847f0cd6084b35"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1fef8edc03d1b17ed0725b1827e19558966f5dc01ee3735ccd0bbf9bfc260918"
   end
 
   depends_on "sdl"
