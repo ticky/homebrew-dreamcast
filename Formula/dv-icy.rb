@@ -5,6 +5,11 @@ class DvIcy < Formula
   sha256 "4635c7af2834ad62bb29203ca7e2e67d15b723dad1e4dc1cdbc181ca289806ab"
   license "AGPL-3.0-or-later"
 
+  livecheck do
+    url "https://www.nz17.com/interactive/dreamcast/dv_icy-dreamcast_vmu_icon_viewer_and_converter"
+    regex(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
+  end
+
   bottle do
     root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/dv-icy-0.9"
     sha256 cellar: :any,                 catalina:     "1c1cd4f5a54474c47fb9074cd1204b2ef95a25212648169a38fcf683f0ac067c"
