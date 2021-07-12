@@ -11,8 +11,9 @@ class DcCardMaker < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/dc-card-maker-1.2.1"
-    sha256 cellar: :any_skip_relocation, catalina:     "c3913548e6ed94a3ddc4a83559b2db8567260a4763f93794e7c8174ef8d867c7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "344f349d1cae2efae4c3c37dff4e14c7c6ca599bae40e35b63612079ac4e85ea"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina:     "c39226282874b38a72e252c30b846f73e8a345d75915dd5a0283bf495af9c35e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e5d3920d55b20524f191222518395633942487990d45ef6c2222911d06b114f2"
   end
 
   depends_on "cdrtools"
