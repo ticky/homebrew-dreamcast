@@ -8,9 +8,9 @@ class Gditools3 < Formula
   head "https://github.com/AltoRetrato/gditools3.git"
 
   bottle do
-    root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/gditools3-3.0.1"
-    sha256 cellar: :any_skip_relocation, catalina:     "d81a56cbd89c76b8cfe8c70b4ca65a644213f412423f93825df92c27f124cc46"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e10b262365b3cb0bb201b51af7f7133199fe98d6e78ea95e7a89b3e765613555"
+    root_url "https://github.com/ticky/homebrew-dreamcast/releases/download/gditools3-3.0.1-ticky.1"
+    sha256 cellar: :any_skip_relocation, catalina:     "d14150d011ca380b201f10bdf649ef738195e026fc66c3c7ca1d323910d722c0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "270b619faaf30c9ef7c880f423081480b53c56e15444af32ff8be9042043d621"
   end
 
   def install
