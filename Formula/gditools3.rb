@@ -1,9 +1,9 @@
 class Gditools3 < Formula
   desc "Python program/library to handle Dreamcast GD-ROM image files"
   homepage "https://github.com/AltoRetrato/gditools3"
-  url "https://github.com/AltoRetrato/gditools3.git",
-      revision: "6b1d00dcb7eb110b77aa79af46ba95a6a3a79bb7"
-  version "3.0.1"
+  url "https://github.com/ticky/gditools3.git",
+      revision: "447eb7375d3ccded127278c3bd41a8e85a61d2c3"
+  version "3.0.1-ticky.1"
   license "GPL-3.0-only"
   head "https://github.com/AltoRetrato/gditools3.git"
 
