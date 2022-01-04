@@ -1,8 +1,8 @@
 cask "gdmenu-card-manager" do
-  version "1.3.3"
-  sha256 "364dbb3b99375e0b84d226d9e403df69c9aa4276b2ffb287144aa4146d10c842"
+  version "1.3.5"
+  sha256 "2b1a8030bbda3d86af75b62fa1190c2a0f2eb9be80b2c9baf50bb71132df0c6d"
 
-  url "https://github.com/sonik-br/GDMENUCardManager/releases/download/#{version}/GDMENUCardManager.v#{version}-osx-x64-AppBundle.tar.gz"
+  url "https://github.com/sonik-br/GDMENUCardManager/releases/download/v#{version}/GDMENUCardManager.v#{version}-osx-x64-AppBundle.tar.gz"
   name "GDMENUCardManager"
   desc "Manage content on SD Card for Dreamcast's GDMenu"
   homepage "https://github.com/sonik-br/GDMENUCardManager"
